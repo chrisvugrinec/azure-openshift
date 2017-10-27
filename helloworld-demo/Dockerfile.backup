@@ -1,0 +1,7 @@
+FROM python:3.5
+MAINTAINER chvugrin@microsoft.com
+COPY . /app
+WORKDIR /app
+RUN pip install flask
+ENV FLASK_APP=hello.py 
+CMD ["flask","run"]
