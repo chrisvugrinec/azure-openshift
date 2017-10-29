@@ -48,7 +48,6 @@ sed -in 's/XXX_AADCLIENTSECRET_XXX/'$password'/g' ./azuredeploy-parameters.json
 
 echo "for some weird reason unable to script...please copy paste this command"
 echo "az keyvault secret set --vault-name "$rgname-kv" --name openshift-secret --file PATH_TO_YOUR_PRIVATE_SSHKEY"
-exit 0
  
 #Create the Openshift Origin setup 
 echo "now create with the following command:"
