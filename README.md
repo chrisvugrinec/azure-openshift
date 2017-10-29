@@ -6,3 +6,5 @@
 * Examples
    * Python flask application: https://github.com/chrisvugrinec/azure-openshift-pythonflaskapp
    * Java Springboot app: https://github.com/chrisvugrinec/azure-openshift-javaspringbootapp
+
+See it in action: https://youtu.be/L7B3eh-1lAM
