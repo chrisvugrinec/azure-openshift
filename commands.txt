@@ -1,0 +1,30 @@
+# create resource group
+az group create -n openshiftdemo -l 'westeurope'
+
+# create keyvault 
+az keyvault create -n openshiftdemo-kv -g openshiftdemo -l 'westeurope' --enabled-for-template-deployment true
+
+# create secret  
+az keyvault secret set --vault-name openshiftdemo-kv  -n openshift-secret --file /Users/chris/.ssh/id_rsa
+ 
+# determine groupid (needed for for RBAC) 
+groupid=$(az group list --query "[?contains(name,'openshiftdemo')]" | jq -r '.[].id')
+
+# create service principal, don't forget to register the appId 
+az ad sp create-for-rbac -n openshiftdemo --role="Contributor" --scopes=$groupid --password HelloWorld123
+ 
+Change parameter file…
+ 
+# Keyvault secret:
+# List
+# az keyvault secret list --vault-name openshiftdemo-kv  keyVaultSecret…Hier ff opletten…openshift-secret
+ 
+# Create the Openshift Origin setup 
+az group deployment create -g openshiftdemo --template-file azuredeploy.json --parameters @azuredeploy.parameters.json
+ 
+# Orginal from:  https://github.com/Microsoft/openshift-origin
+ 
+# oc login https://masterdnswmdjtnhuu36fm.westeurope.cloudapp.azure.com:8443
+# oc project chris1
+# oc status
+# oc expose rc azure-openshift-pythonflaskapp-5 --port=5000

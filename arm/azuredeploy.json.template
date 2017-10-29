@@ -1,0 +1,63 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"_artifactsLocation": {
+			"value": "https://raw.githubusercontent.com/Microsoft/openshift-origin/master/"
+		},
+		"masterVmSize": {
+			"value": "Standard_DS2_v2"
+		},
+		"infraVmSize": {
+			"value": "Standard_DS2_v2"
+		},
+		"nodeVmSize": {
+			"value": "Standard_DS2_v2"
+		},
+		"openshiftClusterPrefix": {
+			"value": "openshiftdemo"
+		},
+		"masterInstanceCount": {
+			"value": 3
+		},
+		"infraInstanceCount": {
+			"value": 2
+		},
+		"nodeInstanceCount": {
+			"value": 1
+		},
+		"dataDiskSize": {
+			"value": 128
+		},
+		"adminUsername": {
+			"value": "XXX_OSUSER_XXX"
+		},
+		"openshiftPassword": {
+			"value": "XXX_OSPASSWORD_XXX"
+		},
+		"sshPublicKey": {
+			"value": "XXX_SSH_XXX"
+		},
+		"keyVaultResourceGroup": {
+			"value": "XXX_KVRG_XXX"
+		},
+		"keyVaultName": {
+			"value": "XXX_KVNAME_XXX"
+		},
+		"keyVaultSecret": {
+			"value": "openshift-secret"
+		},
+		"aadClientId": {
+			"value": "XXX_AADCLIENTID_XXX"
+		},
+		"aadClientSecret": {
+			"value": "XXX_AADCLIENTSECRET_XXX"
+		},
+		"defaultSubDomainType": {
+			"value": "nipio"
+		},
+		"defaultSubDomain": {
+			"value": "openshiftdemo"
+		}
+	}
+}

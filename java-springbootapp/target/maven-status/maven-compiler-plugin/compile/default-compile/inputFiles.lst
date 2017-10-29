@@ -1,8 +1,0 @@
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/controllers/WebController.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/auth/AuthHelper.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/auth/AuthParameterNames.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/MvcConfig.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/controllers/WebErrorController.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/Application.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/WebSecurityConfig.java
-/private/tmp/springboot-webapp/src/main/java/com/microsoft/demo/azuremfaspringboot/auth/AdalFilter.java
