@@ -15,7 +15,7 @@
 			"value": "Standard_DS2_v2"
 		},
 		"openshiftClusterPrefix": {
-			"value": "openshiftdemo"
+			"value": "XXX_NAME_XXX"
 		},
 		"masterInstanceCount": {
 			"value": 3
@@ -57,7 +57,7 @@
 			"value": "nipio"
 		},
 		"defaultSubDomain": {
-			"value": "openshiftdemo"
+			"value": "XXX_NAME_XXX"
 		}
 	}
 }
