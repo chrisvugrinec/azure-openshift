@@ -1,0 +1,8 @@
+com/microsoft/demo/azuremfaspringboot/WebSecurityConfig.class
+com/microsoft/demo/azuremfaspringboot/controllers/WebController.class
+com/microsoft/demo/azuremfaspringboot/auth/AuthHelper.class
+com/microsoft/demo/azuremfaspringboot/controllers/WebErrorController.class
+com/microsoft/demo/azuremfaspringboot/auth/AdalFilter.class
+com/microsoft/demo/azuremfaspringboot/auth/AuthParameterNames.class
+com/microsoft/demo/azuremfaspringboot/Application.class
+com/microsoft/demo/azuremfaspringboot/MvcConfig.class
