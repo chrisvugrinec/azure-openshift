@@ -36,7 +36,7 @@
 			"value": "XXX_OSPASSWORD_XXX"
 		},
 		"sshPublicKey": {
-			"value": "XXX_SSH_XXX"
+			"value": XXX_SSH_XXX
 		},
 		"keyVaultResourceGroup": {
 			"value": "XXX_KVRG_XXX"
